@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>API Endpoints</title>
+</head>
+
+<body>
+    <header>
+        <h1>RESTful API Endpoints</h1>
+        <p>You may need permission on this server to fetch endpoint data</p>
+    </header>
+    <main>
+        <h2>General</h2>
+        <ul class="list">
+            <li class="endpoint">
+                <span class="method">get</span> - <span>/api</span>
+                <p class="endpointdesc">Check if server is up</p>
+            </li>
+        </ul>
+        <h2>Notes</h2>
+        <ul class="list">
+            <li class="endpoint">
+                <span class="method">get</span> - <span>/api/notes</span>
+                <p class="endpointdesc">Get all notes. You can specify an id in the url params to get only one entry: /api/notes?id=2</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/notes</span>
+                <p class="endpointdesc">Create new notes. You must send an array of notes.</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/notes/{id}</span>
+                <p class="endpointdesc">Update notes</p>
+            </li>
+        </ul>
+
+        <h2>Clients</h2>
+        <ul class="list">
+            <li class="endpoint">
+                <span class="method">get</span> - <span>/api/clients</span>
+                <p class="endpointdesc">Get all clients. You can specify an id in the url params to get only one entry: /api/notes?id=2</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/clients</span>
+                <p class="endpointdesc">Create new clients. You must send an array of clients.</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/clients/{id}</span>
+                <p class="endpointdesc">Update clients</p>
+            </li>
+        </ul>
+
+        <h2>Products</h2>
+        <ul class="list">
+            <li class="endpoint">
+                <span class="method">get</span> - <span>/api/products</span>
+                <p class="endpointdesc">Get all products. You can specify an id in the url params to get only one entry: /api/notes?id=2</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/products</span>
+                <p class="endpointdesc">Create new products. You must send an array of products.</p>
+            </li>
+            <li class="endpoint">
+                <span class="method">post</span> - <span>/api/products/{id}</span>
+                <p class="endpointdesc">Update products</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        Created by RuMont &copy; 2022
+    </footer>
+</body>
+
+</html>
